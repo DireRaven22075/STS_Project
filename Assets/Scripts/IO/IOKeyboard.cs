@@ -10,6 +10,9 @@ using STS.Interface;
 
 namespace STS.IO
 {
+    /// <summary>
+    /// 플레이어 키보드 입력 처리 스크립트
+    /// </summary>
     public class IOKeyboard : MonoBehaviour
     {
         #region Variables
@@ -19,6 +22,7 @@ namespace STS.IO
         {
 
         }
+        //TODO : 만들어야 한다
         void Update()
         {
             if (Input.GetKeyDown(KeyCode.Q))

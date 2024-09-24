@@ -10,11 +10,13 @@ using STS.Interface;
 
 namespace STS.IO
 {
+    /// <summary>
+    /// 플레이어의 마우스 입력 처리 스크립트
+    /// </summary>
     public class IOMouse : MonoBehaviour
     {
         #region Variables
         private Camera camera = null;
-
         #endregion
         private void OnEnable()
         {
@@ -33,27 +35,3 @@ namespace STS.IO
         }
     }
 }
-///<summary>
-/// 지원 동기 << 나의 가치관을 실현하고 싶은지 고민해봐야할 필요가 있다.
-/// 
-/// 
-/// 
-/// 
-/// 
-/// 
-/// 
-/// 
-/// 
-/// 
-/// 
-/// 
-/// 
-/// 
-/// 
-/// 
-/// 
-/// 
-/// 
-/// 
-/// 
-///</summary>
