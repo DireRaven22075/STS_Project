@@ -15,5 +15,6 @@ namespace STS.Interface
         EffectType type { get; }
         IEntity owner { get; }
         void Update();
+        void Apply();
     }
 }

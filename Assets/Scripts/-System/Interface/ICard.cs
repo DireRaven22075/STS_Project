@@ -9,8 +9,17 @@ namespace STS.Interface
     /// </summary>
     public interface ICard
     {
+        /// <summary>
+        /// 카드 명
+        /// </summary>
         string name { get; }
+        /// <summary>
+        /// 카드 설명
+        /// </summary>
         string description { get; }
+        /// <summary>
+        /// 카드 이미지
+        /// </summary>
         Sprite img { get; }
 
         int cost { get; }
