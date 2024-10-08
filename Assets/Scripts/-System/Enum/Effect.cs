@@ -1,4 +1,4 @@
-namespace STS.Variable
+namespace STS
 {
     public enum EffectType : int
     {

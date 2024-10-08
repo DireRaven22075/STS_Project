@@ -1,17 +1,25 @@
-using STS.Interface;
-public static class BattleFunc
-{
+using System;
+using System.IO;
+using UnityEngine;
 
-    public static int DMG(IEntity attacker, IEntity defender)
+namespace STS
+{
+    public class Setting
     {
-        return 0;
-    }
-    public static int DEF(IEntity target)
-    {
-        return 0;
-    }
-    public static int ATK(IEntity target)
-    {
-        return 30;
+        private string path;
+        private void Awake()
+        {
+            switch (Application.platform)
+            {
+                case RuntimePlatform.Android: 
+                    path = Application.persistentDataPath; 
+                    break;
+                case RuntimePlatform.WindowsPlayer: 
+                    path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments); 
+                    break;
+            }
+            FileStream stream = new FileStream(path + "/setting.json", FileMode.OpenOrCreate);
+
+        }
     }
 }

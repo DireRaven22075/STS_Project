@@ -17,7 +17,7 @@ namespace STS.UI
         }
         void Update()
         {
-
+            
         }
     }
 }

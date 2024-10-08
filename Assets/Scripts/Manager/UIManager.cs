@@ -1,26 +1,46 @@
 using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.Events;
 using UnityEngine.SceneManagement;
+using DireRaven22075;
+using UnityEngine;
+
 namespace STS.Manager
 {
     public class UIManager : Singleton<UIManager>
     {
-        private Dictionary<string, GameObject> canvas = new Dictionary<string, GameObject>();
-        protected override void Awake()
+        public enum UIType
         {
-            base.Awake();
-            SceneManager.activeSceneChanged += onChange;
-            for (var i = 0; i < this.transform.childCount; i++)
-            {
-                var obj = this.transform.GetChild(i);
-                canvas.Add(obj.name.Split(" ")[0], obj.gameObject);
-                Debug.Log(string.Format("{0} | {1}", obj.name.Split(" ")[0], obj.gameObject.name));
-            }
+            Blur,
+            Pause,
+            Reward,
         }
-        UnityEvent onchange()
+        private Stack<Canvas> stack = new Stack<Canvas>();
+        public void Open(string name)
         {
-            return null;
+            if (stack.Count == 0)
+            {
+                SceneManager.LoadSceneAsync("UI-Blur");
+            }
+            stack.Push(GameObject.Find("UI-" + name).GetComponent<Canvas>());
+        }
+        public void Close()
+        {
+            if (stack.Count > 0)
+            {
+                if (stack.Count == 1)
+                {
+                    
+                    SceneManager.UnloadSceneAsync("UI-Blur");
+                }
+            }
+            return;
+        }
+        public void CloseAll()
+        {
+            while (stack.Count > 0)
+            {
+                Close();
+            }
+            return;
         }
     }
 }

@@ -9,7 +9,7 @@ namespace STS.Variable
         public IEntity owner { get; private set; } = null;
         public void Update()
         {
-
+            
         }
         public void Apply()
         {
