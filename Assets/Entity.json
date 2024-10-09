@@ -11,6 +11,6 @@
         "img": "Sprite/Entity/Boss/BOSS_1.png",
         "name": "TEST-BOSS1",
         "hp": 103,
-        "skills": [1, 2, 3]
+        ""
     }
 ]
