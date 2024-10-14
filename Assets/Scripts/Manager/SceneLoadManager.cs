@@ -4,7 +4,7 @@ namespace STS
 {
     public class SceneLoadManager : MonoBehaviour
     {
-        private static string nextScene = "ERROR";
+        private static string nextScene = "";
         public static void LoadScene(string sceneName)
         {
             nextScene = sceneName;
@@ -13,15 +13,12 @@ namespace STS
 
         private void Start()
         {
-            if (nextScene != "ERROR")
+            if (nextScene == "")
             {
-                SceneManager.LoadScene(nextScene, LoadSceneMode.Single);
-            }
-            else
-            {
-                Debug.LogError("SceneLoadManager : Scene name is not set");
                 SceneManager.LoadScene(Constants.Scene.Main);
+                return;
             }
+            SceneManager.LoadScene(nextScene, LoadSceneMode.Single);
         }
     }
 }
