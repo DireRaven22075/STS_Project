@@ -1,0 +1,133 @@
+[
+    {
+        "id": -1, "img": "Sprite/Entity/TEST_BOT.png", "name": "TEST-BOT",
+        "hp": 100,
+        "atk": 2,
+        "def": 1,
+        "skills": [1, 2, 3]
+    },
+    {
+        "id": 1, "img": "Sprite/Entity/TEST_BOT.png", "name": "TEST-BOT",
+        "hp": 100,
+        "atk": 2,
+        "def": 1,
+        "skills": [1, 2, 3]
+    },
+    {
+        "id": 1,
+        "img": "Sprite/Entity/TEST_BOT.png",
+        "name": "TEST-BOT",
+        "hp": 100,
+        "atk": 2,
+        "def": 1,
+        "skills": [1, 2, 3]
+    },
+    {
+        "id": 1,
+        "img": "Sprite/Entity/TEST_BOT.png",
+        "name": "TEST-BOT",
+        "hp": 100,
+        "atk": 2,
+        "def": 1,
+        "skills": [1, 2, 3]
+    },
+    {
+        "id": 1,
+        "img": "Sprite/Entity/TEST_BOT.png",
+        "name": "TEST-BOT",
+        "hp": 100,
+        "atk": 2,
+        "def": 1,
+        "skills": [1, 2, 3]
+    },
+    {
+        "id": 1,
+        "img": "Sprite/Entity/TEST_BOT.png",
+        "name": "TEST-BOT",
+        "hp": 100,
+        "atk": 2,
+        "def": 1,
+        "skills": [1, 2, 3]
+    },
+    {
+        "id": 1,
+        "img": "Sprite/Entity/TEST_BOT.png",
+        "name": "TEST-BOT",
+        "hp": 100,
+        "atk": 2,
+        "def": 1,
+        "skills": [1, 2, 3]
+    },
+    {
+        "id": 1,
+        "img": "Sprite/Entity/TEST_BOT.png",
+        "name": "TEST-BOT",
+        "hp": 100,
+        "atk": 2,
+        "def": 1,
+        "skills": [1, 2, 3]
+    },
+    {
+        "id": 1,
+        "img": "Sprite/Entity/TEST_BOT.png",
+        "name": "TEST-BOT",
+        "hp": 100,
+        "atk": 2,
+        "def": 1,
+        "skills": [1, 2, 3]
+    },
+    {
+        "id": 1,
+        "img": "Sprite/Entity/TEST_BOT.png",
+        "name": "TEST-BOT",
+        "hp": 100,
+        "atk": 2,
+        "def": 1,
+        "skills": [1, 2, 3]
+    },
+    {
+        "id": 1,
+        "img": "Sprite/Entity/TEST_BOT.png",
+        "name": "TEST-BOT",
+        "hp": 100,
+        "atk": 2,
+        "def": 1,
+        "skills": [1, 2, 3]
+    },
+    {
+        "id": 1,
+        "img": "Sprite/Entity/TEST_BOT.png",
+        "name": "TEST-BOT",
+        "hp": 100,
+        "atk": 2,
+        "def": 1,
+        "skills": [1, 2, 3]
+    },
+    {
+        "id": 1,
+        "img": "Sprite/Entity/TEST_BOT.png",
+        "name": "TEST-BOT",
+        "hp": 100,
+        "atk": 2,
+        "def": 1,
+        "skills": [1, 2, 3]
+    },
+    {
+        "id": 1,
+        "img": "Sprite/Entity/TEST_BOT.png",
+        "name": "TEST-BOT",
+        "hp": 100,
+        "atk": 2,
+        "def": 1,
+        "skills": [1, 2, 3]
+    },
+    {
+        "id": 100001,
+        "img": "Sprite/Entity/Boss/BOSS_1.png",
+        "name": "TEST-BOSS1",
+        "hp": 103,
+        "atk": 1,
+        "def": 1,
+        "skills":[1, 2, 3]
+    }
+]

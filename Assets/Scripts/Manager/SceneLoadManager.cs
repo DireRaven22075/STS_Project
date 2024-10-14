@@ -17,6 +17,11 @@ namespace STS
             {
                 SceneManager.LoadScene(nextScene, LoadSceneMode.Single);
             }
+            else
+            {
+                Debug.LogError("SceneLoadManager : Scene name is not set");
+                SceneManager.LoadScene(Constants.Scene.Main);
+            }
         }
     }
 }

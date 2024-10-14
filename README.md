@@ -29,7 +29,7 @@
 
 ## About The Project
 
-![project-image](_docs/title.png)
+![project-image](-DOCS/title.png)
 
 간단한 프로젝트 설명
 

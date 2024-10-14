@@ -14,6 +14,13 @@ namespace STS.Manager
         public GameState state { get; private set; } = GameState.None;
 
 
+        public void StartBattle(int id)
+        {
+            state = GameState.Battle;
+            SceneLoadManager.LoadScene(Constants.Scene.Battle);
+            //FieldManager.Instance.Save();
+        }
+
         public void Pause()
         {
             state = GameState.Pause;

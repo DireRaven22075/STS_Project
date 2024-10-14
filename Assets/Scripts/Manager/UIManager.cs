@@ -1,46 +1,79 @@
+using System.Collections;
 using System.Collections.Generic;
-using UnityEngine.SceneManagement;
-using DireRaven22075;
-using UnityEngine;
 
+using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
+using DireRaven22075;
+namespace STS
+{
+    public enum UIType : int
+    {
+        Pause = 1,
+        Setting = 2,
+    }
+}
 namespace STS.Manager
 {
     public class UIManager : Singleton<UIManager>
     {
-        public enum UIType
-        {
-            Blur,
-            Pause,
-            Reward,
-        }
+
+        #region Variable
+        private Camera camera;
+        [SerializeField]
+        private List<Canvas> uiList = new List<Canvas>();
         private Stack<Canvas> stack = new Stack<Canvas>();
-        public void Open(string name)
+        private List<Canvas> stackList = new List<Canvas>();
+        #endregion
+        protected override void Awake()
         {
-            if (stack.Count == 0)
+            base.Awake();
+        }
+        protected void Start()
+        {
+            for (int i = 0; i < transform.childCount; i++)
             {
-                SceneManager.LoadSceneAsync("UI-Blur");
+                uiList.Add(transform.GetChild(i).GetComponent<Canvas>());
             }
-            stack.Push(GameObject.Find("UI-" + name).GetComponent<Canvas>());
+        }
+        private void Update()
+        {
+            if (camera == null)
+            {
+                camera = Camera.main;
+            }
+            uiList[0].gameObject.SetActive(stack.Count > 0);
+        }
+        #region Public Methods
+        public void Open(UIType type)
+        {
+            if (stackList.Contains(uiList[(int)type]))
+            {
+                return;
+            }
+            if (stack.Count > 0)
+            {
+                stack.Peek().gameObject.SetActive(false);
+            }
+            stackList.Add(uiList[(int)type]);
+            stack.Push(uiList[(int)type]);
+            stack.Peek().gameObject.SetActive(true);
         }
         public void Close()
         {
+            if (stack.Count == 0)
+            {
+                return;
+            }
+            var temp = stack.Pop();
+            stackList.Remove(temp);
+            temp.gameObject.SetActive(false);
             if (stack.Count > 0)
             {
-                if (stack.Count == 1)
-                {
-                    
-                    SceneManager.UnloadSceneAsync("UI-Blur");
-                }
+                stack.Peek().gameObject.SetActive(true);
             }
-            return;
         }
-        public void CloseAll()
-        {
-            while (stack.Count > 0)
-            {
-                Close();
-            }
-            return;
-        }
+        #endregion
     }
 }
