@@ -10,8 +10,19 @@ namespace STS
 {
     public enum UIType : int
     {
+        //Public
         Pause = 1,
         Setting = 2,
+
+        //Battle
+        Reward = 3,
+        Inventory = 4,
+        Deck = 5,
+        Shop = 6,
+
+        //Title
+        Title = 7,
+
     }
 }
 namespace STS.Manager
@@ -21,7 +32,6 @@ namespace STS.Manager
 
         #region Variable
         private Camera camera;
-        [SerializeField]
         private List<Canvas> uiList = new List<Canvas>();
         private Stack<Canvas> stack = new Stack<Canvas>();
         private List<Canvas> stackList = new List<Canvas>();

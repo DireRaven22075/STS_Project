@@ -19,8 +19,23 @@ namespace STS.Manager
             state = GameState.Battle;
             SceneLoadManager.LoadScene(Constants.Scene.Battle);
             //FieldManager.Instance.Save();
-        }
 
+        }
+        public void StartShop(int id)
+        {
+            state = GameState.Stage;
+            SceneLoadManager.LoadScene(Constants.Scene.Shop);
+        }
+        public void StartEvent(int id)
+        {
+            state = GameState.Stage;
+            SceneLoadManager.LoadScene(Constants.Scene.Event);
+        }
+        public void StartRest()
+        {
+            state = GameState.Stage;
+            SceneLoadManager.LoadScene(Constants.Scene.Rest);
+        }
         public void Pause()
         {
             state = GameState.Pause;

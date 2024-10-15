@@ -9,6 +9,9 @@ namespace STS
             public const string Field = "02.Field";
             public const string Battle = "03.Battle";
             public const string Event = "04.Event";
+            public const string Shop = "05.Shop";
+            public const string Rest = "06.Rest";
+            public const string Error = "99.Error";
         }
     }
 }

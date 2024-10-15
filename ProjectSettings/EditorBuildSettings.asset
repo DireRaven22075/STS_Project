@@ -6,22 +6,22 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/00.Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
-    path: Assets/Scenes/01.Title.unity
+    path: Assets/00.Scenes/01.Title.unity
     guid: 37d2599af58a545c2981340f484c80d9
   - enabled: 1
-    path: Assets/Scenes/00.Loading.unity
+    path: Assets/00.Scenes/00.Loading.unity
     guid: 1a4b8539b75be4ccc9e79d4ef6c5f68f
   - enabled: 1
-    path: Assets/Scenes/04.Event.unity
+    path: Assets/00.Scenes/04.Event.unity
     guid: 51fcda28f00de471abe0e50b71b6534c
   - enabled: 1
-    path: Assets/Scenes/02.Field.unity
+    path: Assets/00.Scenes/02.Field.unity
     guid: ac28030631d3247cdb23c7fd1e49c5a8
   - enabled: 1
-    path: Assets/Scenes/03.Battle.unity
+    path: Assets/00.Scenes/03.Battle.unity
     guid: b81d2f58f60da418ba5f9556350be93c
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
