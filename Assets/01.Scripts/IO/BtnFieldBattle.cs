@@ -12,7 +12,6 @@ namespace STS.IO
         {
             if (isOver && Input.GetMouseButtonDown(0))
             {
-                GameManager.Instance.StartBattle(1);
             }
         }
         public void OnMouseExit()

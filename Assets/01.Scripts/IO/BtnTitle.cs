@@ -7,7 +7,7 @@ namespace STS.IO
     {
         public void GameStart()
         {
-            SceneLoadManager.LoadScene("02.Field");
+            SceneLoadManager.LoadScene(Constants.Scene.Map);
         }
         public void OpenSetting()
         {
