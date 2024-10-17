@@ -73,6 +73,7 @@
     <Compile Include="Assets/01.Scripts/TestGUI.cs" />
     <Compile Include="Assets/01.Scripts/-System/Predicate/BattleFunc.cs" />
     <Compile Include="Assets/01.Scripts/Data/Entity.cs" />
+    <Compile Include="Assets/01.Scripts/Manager/AudioManager.cs" />
     <Compile Include="Assets/01.Scripts/-System/Interface/ICard.cs" />
     <Compile Include="Assets/01.Scripts/-System/Enum/Game.cs" />
     <Compile Include="Assets/01.Scripts/FieldManager.cs" />
