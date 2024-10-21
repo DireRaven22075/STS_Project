@@ -4,7 +4,7 @@ namespace STS
     {
         public struct AssetBundle
         {
-
+            
         }
     }
 }

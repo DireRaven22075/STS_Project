@@ -86,11 +86,12 @@
     <Compile Include="Assets/01.Scripts/FiledLineRenderer.cs" />
     <Compile Include="Assets/01.Scripts/-System/Interface/IButton.cs" />
     <Compile Include="Assets/01.Scripts/IO/BtnField.cs" />
+    <Compile Include="Assets/01.Scripts/-System/Constants/Constants-Scene.cs" />
     <Compile Include="Assets/01.Scripts/Manager/AssetBundleManager.cs" />
     <Compile Include="Assets/01.Scripts/Manager/GameManager.cs" />
     <Compile Include="Assets/01.Scripts/-System/Class/Singleton.cs" />
+    <Compile Include="Assets/01.Scripts/-System/Constants/Constants-Scene copy.cs" />
     <Compile Include="Assets/01.Scripts/Utils.cs" />
-    <Compile Include="Assets/01.Scripts/-System/Constants.cs" />
     <Compile Include="Assets/01.Scripts/Manager/UIManager.cs" />
     <Compile Include="Assets/01.Scripts/Manager/InputManager_Button.cs" />
   </ItemGroup>

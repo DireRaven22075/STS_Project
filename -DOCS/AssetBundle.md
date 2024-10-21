@@ -7,6 +7,8 @@
             - entity
             - other
         - event
+    - xml (text-xml)
+        - setting
 - sprite
     - ui
         - base
@@ -16,6 +18,7 @@
         - battle
             - cards
         - field
+            - 
         - event
     - bg (sprite-bg)
         1. Title
