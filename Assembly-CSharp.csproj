@@ -81,6 +81,7 @@
     <Compile Include="Assets/01.Scripts/IO/BtnTitle.cs" />
     <Compile Include="Assets/01.Scripts/-System/Interface/IEntity.cs" />
     <Compile Include="Assets/01.Scripts/-System/Class/Stat.cs" />
+    <Compile Include="Assets/01.Scripts/-System/Constants/Constants-AssetBundle.cs" />
     <Compile Include="Assets/01.Scripts/UI/UICards.cs" />
     <Compile Include="Assets/01.Scripts/Entity/TestEnemy.cs" />
     <Compile Include="Assets/01.Scripts/FiledLineRenderer.cs" />
@@ -90,35 +91,35 @@
     <Compile Include="Assets/01.Scripts/Manager/AssetBundleManager.cs" />
     <Compile Include="Assets/01.Scripts/Manager/GameManager.cs" />
     <Compile Include="Assets/01.Scripts/-System/Class/Singleton.cs" />
-    <Compile Include="Assets/01.Scripts/-System/Constants/Constants-Scene copy.cs" />
     <Compile Include="Assets/01.Scripts/Utils.cs" />
     <Compile Include="Assets/01.Scripts/Manager/UIManager.cs" />
     <Compile Include="Assets/01.Scripts/Manager/InputManager_Button.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile-2-Pass.shader" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader" />
-    <None Include="Assets/TextMesh Pro/Shaders/SDFFunctions.hlsl" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader" />
-    <None Include="Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF.shader" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader" />
-    <None Include="Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc" />
-    <None Include="Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader" />
-    <None Include="Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_Sprite.shader" />
+    <None Include="Assets/Resources/TextMesh Pro/Shaders/TMPro.cginc" />
+    <None Include="Assets/Text/xml/event/1.xml" />
+    <None Include="Assets/Resources/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets/Resources/TextMesh Pro/Shaders/TMP_SDF-Mobile-2-Pass.shader" />
+    <None Include="Assets/Resources/TextMesh Pro/Shaders/TMP_Bitmap.shader" />
+    <None Include="Assets/Resources/TextMesh Pro/Shaders/TMPro_Mobile.cginc" />
+    <None Include="Assets/Resources/TextMesh Pro/Shaders/TMP_SDF SSD.shader" />
+    <None Include="Assets/Resources/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets/Resources/TextMesh Pro/Shaders/SDFFunctions.hlsl" />
+    <None Include="Assets/Resources/TextMesh Pro/Shaders/TMP_SDF-Surface.shader" />
+    <None Include="Assets/Resources/TextMesh Pro/Sprites/EmojiOne Attribution.txt" />
+    <None Include="Assets/Resources/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader" />
+    <None Include="Assets/Resources/TextMesh Pro/Shaders/TMP_SDF.shader" />
+    <None Include="Assets/Resources/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader" />
+    <None Include="Assets/Resources/TextMesh Pro/Resources/LineBreaking Leading Characters.txt" />
+    <None Include="Assets/Resources/TextMesh Pro/Shaders/TMPro_Properties.cginc" />
+    <None Include="Assets/Resources/TextMesh Pro/Shaders/TMPro_Surface.cginc" />
+    <None Include="Assets/Resources/TextMesh Pro/Resources/LineBreaking Following Characters.txt" />
+    <None Include="Assets/Resources/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets/Resources/TextMesh Pro/Shaders/TMP_SDF Overlay.shader" />
+    <None Include="Assets/Resources/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader" />
+    <None Include="Assets/Resources/TextMesh Pro/Fonts/LiberationSans - OFL.txt" />
+    <None Include="Assets/Resources/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader" />
+    <None Include="Assets/Resources/TextMesh Pro/Shaders/TMP_Sprite.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

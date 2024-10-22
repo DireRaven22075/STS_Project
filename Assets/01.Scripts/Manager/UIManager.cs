@@ -27,9 +27,8 @@ namespace STS
 }
 namespace STS.Manager
 {
-    public class UIManager : Singleton<UIManager>
+    public partial class UIManager : Singleton<UIManager>
     {
-
         #region Variable
         private Camera camera;
         private List<Canvas> uiList = new List<Canvas>();

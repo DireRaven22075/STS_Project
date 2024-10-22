@@ -2,15 +2,12 @@ namespace STS
 {
     public enum GameState : int
     {
-        None = 0,
-        Start = 1,
-
-        Play = 2,
-
-        Field = 3,
-        Stage = 7,
-        Battle = 4,
-        Pause = 5,
-        End = 6,
+        Err = 0, None = 1, Title = 2, Map = 3,
+        Field = 4, Battle = 5, End = 6
+    }
+    public enum FieldType : int
+    {
+        Empty = 0, Shop = 3,
+        MobBattle = 1, BossBattle = 2,
     }
 }

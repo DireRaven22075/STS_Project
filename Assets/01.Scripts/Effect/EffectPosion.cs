@@ -17,7 +17,7 @@ namespace STS.Variable
 
         public EffectPosion(IEntity owner)
         {
-
+            
         }
     }
 }

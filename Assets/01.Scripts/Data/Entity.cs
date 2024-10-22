@@ -5,7 +5,5 @@ namespace STS.SerializedData
     public class Entity : ScriptableObject
     {
         private Sprite image;
-
-
     }
 }

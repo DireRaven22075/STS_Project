@@ -5,47 +5,37 @@ using UnityEngine;
 using UnityEngine.UI;
 
 using DireRaven22075;
-namespace STS
-{
-    public enum FieldType : int
-    {
-        Empty = 0,
-        NormalBattle = 1,
-        BossBattle = 2,
-        Shop = 3
-
-    }
-}
 namespace STS.Manager
 {
     public class GameManager : Singleton<GameManager>
     {
         public GameState state { get; private set; } = GameState.None;
 
+        public bool isPause { get; private set; } = false;
+        public int seed { get; private set; } = 0;
         public void Move2Field(FieldType type)
         {
+            state = (type == FieldType.Shop) ? GameState.Field : GameState.Battle;
+            SceneLoadManager.LoadScene(Constants.Scene.Field);
             switch (type)
             {
-                case FieldType.NormalBattle:
-                    state = GameState.Field;
-                    SceneLoadManager.LoadScene(Constants.Scene.Field);
+                case FieldType.MobBattle:
+                    seed = Random.Range(Constants.Setting.mobMin, Constants.Setting.mobMax);
                     break;
                 case FieldType.BossBattle:
-
-                    break;
-                case FieldType.Shop:
-
+                    seed = Random.Range(Constants.Setting.bossMin, Constants.Setting.bossMax);
                     break;
             }
+            return;
         }
         public void Pause()
         {
-            state = GameState.Pause;
+            isPause = true;
             Time.timeScale = 0;
         }
         public void Resume()
         {
-            state = GameState.Play;
+            isPause = false;
             Time.timeScale = 1;
         }
     }
